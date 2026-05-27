@@ -247,7 +247,8 @@ button:hover {
 }
 
 .servicos h2,
-.escolher h2 {
+.escolher h2,
+.portfolio h2 {
   font-size: clamp(34px, 5vw, 45px);
   margin-bottom: 15px;
 }
@@ -319,6 +320,81 @@ button:hover {
   color: #ccc;
   line-height: 28px;
   min-height: 115px;
+}
+
+/* PORTFÓLIO */
+
+.portfolio {
+  padding: 100px 40px;
+  background:
+    radial-gradient(circle at center, rgba(255, 208, 0, 0.08), transparent 35%),
+    #111;
+  text-align: center;
+}
+
+.portfolio h2 {
+  color: #ffd000;
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 420px));
+  justify-content: center;
+  gap: 35px;
+}
+
+.portfolio-card {
+  background:
+    linear-gradient(145deg, rgba(255, 208, 0, 0.08), rgba(20, 20, 20, 0.96));
+  border: 1px solid rgba(255, 208, 0, 0.15);
+  border-radius: 28px;
+  overflow: hidden;
+  transition: 0.35s;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-12px);
+  border-color: rgba(255, 208, 0, 0.7);
+  box-shadow:
+    0 0 35px rgba(255, 208, 0, 0.16),
+    0 30px 80px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.portfolio-card h3 {
+  color: #ffd000;
+  font-size: 30px;
+  margin: 25px 20px 15px;
+}
+
+.portfolio-card p {
+  color: #ccc;
+  padding: 0 20px;
+  line-height: 30px;
+  min-height: 90px;
+}
+
+.portfolio-card button {
+  margin: 25px 20px 30px;
+  padding: 14px 28px;
+  border-radius: 14px;
+  border: none;
+  background: #ffd000;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.portfolio-card button:hover {
+  transform: scale(1.05);
+  background: #ffdf33;
 }
 
 /* ESCOLHER */
@@ -601,6 +677,7 @@ button:hover {
 
   .sobre,
   .servicos,
+  .portfolio,
   .escolher,
   .contato {
     padding: 65px 18px;
@@ -608,6 +685,7 @@ button:hover {
 
   .cards,
   .graficos,
+  .portfolio-cards,
   .rodape-container {
     grid-template-columns: 1fr;
   }
@@ -615,6 +693,10 @@ button:hover {
   .rodape-container {
     padding: 0 25px 45px;
     text-align: center;
+  }
+
+  .portfolio-card img {
+    height: 220px;
   }
 
   .whatsapp-flutuante {

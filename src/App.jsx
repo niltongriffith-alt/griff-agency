@@ -7,18 +7,21 @@ function App() {
       <header className="topo">
 
         <div className="logo">
+
           <img src="/logo.png" alt="Logo Griff Agency" />
 
           <div className="logo-texto">
             <h1>GRIFF AGENCY</h1>
             <span>Marketing • Sites • Design • Automação</span>
           </div>
+
         </div>
 
         <nav className="menu">
           <a href="#inicio">Início</a>
           <a href="#sobre">Sobre</a>
           <a href="#servicos">Serviços</a>
+          <a href="#portfolio">Projetos</a>
           <a href="#escolher">Por que escolher</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -205,6 +208,65 @@ function App() {
 
       </section>
 
+      <section id="portfolio" className="portfolio">
+
+        <h2>Projetos da Griff Agency</h2>
+
+        <p className="subtitulo">
+          Alguns projetos fictícios criados para demonstrar
+          a qualidade visual e profissional da Griff Agency.
+        </p>
+
+        <div className="portfolio-cards">
+
+          <div className="portfolio-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?q=80&w=1200&auto=format&fit=crop"
+              alt="Luxe Barber Club"
+            />
+
+            <h3>Luxe Barber Club</h3>
+
+            <p>
+              Site premium criado para uma barbearia moderna e sofisticada.
+            </p>
+
+            <a
+              href="https://luxe-barber-club.vercel.app/"
+              target="_blank"
+            >
+              <button>Ver Projeto</button>
+            </a>
+
+          </div>
+
+          <div className="portfolio-card">
+
+            <img
+              src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop"
+              alt="FastBurg Delivery"
+            />
+
+            <h3>FastBurg Delivery</h3>
+
+            <p>
+              Landing page moderna criada para delivery e pedidos online.
+            </p>
+
+            <a
+              href="https://fastburg-delivery.vercel.app/"
+              target="_blank"
+            >
+              <button>Ver Projeto</button>
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
       <section id="escolher" className="escolher">
 
         <h2>Por que escolher a Griff Agency?</h2>
@@ -306,6 +368,7 @@ function App() {
             <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
+            <a href="#portfolio">Projetos</a>
             <a href="#escolher">Por que escolher</a>
             <a href="#contato">Contato</a>
 

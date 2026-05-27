@@ -51,7 +51,7 @@ function App() {
       <section id="inicio" className="hero">
 
         <h2>
-          Sua empresa merece uma presença digital profissional
+          TESTE GRIFF AGENCY ATUALIZADO
         </h2>
 
         <p>
